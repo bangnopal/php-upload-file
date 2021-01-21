@@ -4,14 +4,16 @@ header("X-Powered-By: Turu API");
 header("Content-type: application/json");
 
 /**
- * Konfigurasi
+ * Konfigurasi dasar
+ * silahkan ganti DIRNAME jadi lokasi dimana file yg di upload di tempatkan pada server/hosting kalian
+ * dan jangan lupa juga untuk mengganti HTTPS://YOUR_SITE.TLD jadi hostname/domain tempat kalian hosting script ini
 */
 
 $config = array(
-	"target_dir" => "uploads/",
-	"target_file" => "uploads/".time(),
+	"target_dir" => "DIRNAME/",
+	"target_file" => "DIRNAME/".time(),
 	"max_size" => 1000000,
-	"base-url" => "https://naufalhoster.xyz"
+	"base-url" => "HTTPS://YOUR_SITE.TLD"
 	);
 
 
